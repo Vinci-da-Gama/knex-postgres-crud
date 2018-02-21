@@ -1,0 +1,53 @@
+express-session
+q
+joi
+bcrypt-nodejs || bcryptjs
+connect-flash
+passport
+passport-local
+passport-facebook
+winston
+bcrypt
+sequelize
+dotenv 
+
+
+
+chai
+chai-http
+mocha
+eslint
+
+npm i -S passport passport-local bcrypt express-session connect-flash dotenv bcryptjs
+npm i -D supertest eslint passport-stub cross-env
+
+
+npm install -g generator-galvanize-express@1.2.3
+npm i -g yo
+
+csbengageCoding
+yo galvanize-express
+
+\x8f\xc5p8\xeeU\xa5:\x14~"m\xee\xc8\t\xc5\x7fp\x0eSP\x81t\x07
+
+http://mherman.org/blog/2016/09/25/node-passport-and-postgres/#.WnjexXVuYj8
+https://www.codementor.io/olatundegaruba/5-steps-to-authenticating-node-js-with-jwt-7ahb5dmyr
+https://medium.com/of-all-things-tech-progress/starting-with-authentication-a-tutorial-with-node-js-and-mongodb-25d524ca0359
+
+/* 
+psql -h dev.mobecom.co -U mobecomdevops
+M0bec0m17
+kelin@csbengage.com
+Abcd1234
+*/
+
+
+{
+    "username": "j",
+    "password": "abc"
+}
+
+{
+    "username": "kelly",
+    "password": "a"
+}
