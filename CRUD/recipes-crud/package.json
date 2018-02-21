@@ -1,0 +1,31 @@
+{
+	"name": "recipes-crud",
+	"version": "1.0.0",
+	"scripts": {
+		"start": "node ./serverListener",
+		"dev": "nodemon",
+		"migr": "knex migrate:latest",
+		"seed": "knex seed:run",
+		"redb": "node ./rawcmd/devDropNctdb.js",
+		"test": "(node ./rawcmd/testDropNctdb.js) && cross-env NODE_ENV=test mocha"
+	},
+	"author": "Collin",
+	"dependencies": {
+		"body-parser": "~1.18.2",
+		"cookie-parser": "~1.4.3",
+		"debug": "~2.6.9",
+		"express": "~4.15.5",
+		"knex": "^0.14.2",
+		"morgan": "~1.9.0",
+		"pg": "^7.4.1",
+		"pug": "^2.0.0-rc.4",
+		"serve-favicon": "~2.4.5"
+	},
+	"devDependencies": {
+		"chai": "^4.1.2",
+		"cross-env": "^5.1.3",
+		"mocha": "^5.0.0",
+		"nodemon": "^1.14.11",
+		"supertest": "^3.0.0"
+	}
+}

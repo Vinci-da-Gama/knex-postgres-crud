@@ -1,0 +1,33 @@
+{
+  "name": "join-server",
+  "version": "1.0.0",
+  "author": "Collin",
+  "scripts": {
+    "start": "node ./serverListener",
+    "ctddb": "cross-env NODE_ENV=conn node ./rawcmds/createDevDb.js",
+    "cttdb": "cross-env NODE_ENV=conn node ./rawcmds/createTestDb.js",
+    "dpctdb": "cross-env NODE_ENV=conn node ./rawcmds/devDpNCtDb.js",
+    "dpcttdb": "cross-env NODE_ENV=conn node ./rawcmds/testDpNCtDb.js",
+    "kml": "knex migrate:latest",
+    "ksr": "knex seed:run",
+    "test": "(node ./rawcmds/testDpNCtDb.js) && cross-env NODE_ENV=test mocha"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "jade": "^1.11.0",
+    "knex": "^0.14.2",
+    "morgan": "~1.9.0",
+    "pg": "^7.4.1",
+    "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "cross-env": "^5.1.3",
+    "mocha": "^5.0.0",
+    "nodemon": "^1.14.11",
+    "supertest": "^3.0.0"
+  }
+}

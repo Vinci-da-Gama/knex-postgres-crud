@@ -1,0 +1,35 @@
+{
+	"name": "createtabel-insertdata",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"start": "node ./serverListener",
+		"ctdb": "cross-env NODE_ENV=conn node ./rawcmd/createDb.js",
+		"cttdb": "cross-env NODE_ENV=conn node ./rawcmd/createTestDb.js",
+		"dpctdb": "cross-env NODE_ENV=conn node ./rawcmd/devDpNctDb.js",
+		"dpcttdb": "cross-env NODE_ENV=conn node ./rawcmd/testDpNctDb.js",
+		"kml": "knex migrate:latest",
+		"ksr": "knex seed:run",
+		"ips": "cross-env NODE_ENV=development node ./rawcmd/insertPersons.js",
+		"ipds": "cross-env NODE_ENV=development node ./rawcmd/insertPersons.js",
+		"delp": "cross-env NODE_ENV=development node ./rawcmd/delPersons.js",
+		"delpd": "cross-env NODE_ENV=development node ./rawcmd/delProducts.js"
+	},
+	"dependencies": {
+		"body-parser": "~1.18.2",
+		"cookie-parser": "~1.4.3",
+		"csv": "^2.0.0",
+		"debug": "~2.6.9",
+		"express": "~4.15.5",
+		"knex": "^0.14.2",
+		"morgan": "~1.9.0",
+		"path": "^0.12.7",
+		"pg": "^7.4.1",
+		"pug": "^2.0.0-rc.4",
+		"serve-favicon": "~2.4.5"
+	},
+	"devDependencies": {
+		"cross-env": "^5.1.3",
+		"nodemon": "^1.14.11"
+	}
+}

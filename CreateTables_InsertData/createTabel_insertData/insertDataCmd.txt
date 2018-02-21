@@ -1,0 +1,16 @@
+psql -h collin.lifeiq.io -U mobecomdevops
+M0bec0m17
+kelin@csbengage.com
+Abcd1234
+drop database "ppd";
+create database "ppd";
+
+
+\copy persons (fn, ln, dob, email, phone) FROM 'C:/Users/mebocom_csbengage/Desktop/a/BackEnd/CreateTables_InsertData/createTabel_insertData/defaultData/persons.csv' DELIMITER ',' CSV HEADER;
+
+// if there is no foreign key, this works. But foreign key is added.
+\copy products (name, price, "produceDate", "pId") FROM 'C:/Users/mebocom_csbengage/Desktop/a/BackEnd/CreateTables_InsertData/createTabel_insertData/defaultData/products.csv' DELIMITER ',' CSV HEADER;
+
+"C:\\Program Files\\PostgreSQL\\10\\bin\\psql.exe" --command " "\\copy public.products (name, price, \"produceDate\") FROM 'C:/Users/MEBOCO~1/Desktop/HUNTER~1/BackEnd/CREATE~1/CREATE~1/DEFAUL~1/products.csv' DELIMITER ',' CSV HEADER QUOTE '\"' ESCAPE '''';""
+
+"C:\\Program Files\\PostgreSQL\\10\\bin\\psql.exe" --command " "\\copy public.persons (fn, ln, dob, email, phone) FROM 'C:/Users/MEBOCO~1/Desktop/HUNTER~1/BackEnd/CREATE~1/CREATE~1/DEFAUL~1/persons.csv' CSV HEADER QUOTE '\"' ESCAPE '''';""
